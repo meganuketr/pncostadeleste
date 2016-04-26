@@ -37,12 +37,3 @@ class CreateInventoryTable extends Migration
         Schema::drop('users');
     }
 }
-
-
-CREATE TABLE `inventario` (
-		`categoria` varchar(50) DEFAULT NULL,
-		`material` varchar(100) DEFAULT NULL,
-		`cantidad` int(11) DEFAULT NULL,
-		`minimo` int(11) DEFAULT NULL,
-		`precio` float DEFAULT NULL
-		) ENGINE=InnoDB DEFAULT CHARSET=utf8;
