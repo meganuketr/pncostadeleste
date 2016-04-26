@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateInventoryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,8 +12,12 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('inventario', function (Blueprint $table) {
             $table->increments('id');
+            $table->int('material_id');
+            $table->int('existencia');
+            $table->int('minimo');
+            
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
@@ -33,3 +37,12 @@ class CreateUsersTable extends Migration
         Schema::drop('users');
     }
 }
+
+
+CREATE TABLE `inventario` (
+		`categoria` varchar(50) DEFAULT NULL,
+		`material` varchar(100) DEFAULT NULL,
+		`cantidad` int(11) DEFAULT NULL,
+		`minimo` int(11) DEFAULT NULL,
+		`precio` float DEFAULT NULL
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8;
