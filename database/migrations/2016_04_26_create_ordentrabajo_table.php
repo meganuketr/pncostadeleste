@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOTsTable extends Migration
+class CreateOrdentrabajoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateOTsTable extends Migration
      */
     public function up()
     {
-        Schema::create('orden_trabajo', function (Blueprint $table) {
+        Schema::create('ordentrabajo', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('cliente_id');           
             $table->string('descripcion');
@@ -42,6 +42,6 @@ class CreateOTsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('orden_trabajo');
+        Schema::drop('ordentrabajo');
     }
 }
