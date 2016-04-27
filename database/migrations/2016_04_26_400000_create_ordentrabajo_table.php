@@ -24,7 +24,7 @@ class CreateOrdentrabajoTable extends Migration
             
             $table->foreign('cliente_id')
 	            ->references('id')
-	            ->on('clients')
+	            ->on('clientes')
 	            ->onDelete('cascade');
             $table->foreign('status_id')
 	            ->references('id')
