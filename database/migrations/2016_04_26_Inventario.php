@@ -14,15 +14,9 @@ class CreateInventoryTable extends Migration
     {
         Schema::create('inventario', function (Blueprint $table) {
             $table->increments('id');
-            $table->int('material_id');
-            $table->int('existencia');
-            $table->int('minimo');
-            
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->int('level');
-            $table->rememberToken();
+            $table->integer('material_id');
+            $table->integer('existencia');
+            $table->integer('minimo');
             $table->timestamps();
         });
     }

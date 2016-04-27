@@ -14,10 +14,10 @@ class CreateOTsTable extends Migration
     {
         Schema::create('orden_trabajo', function (Blueprint $table) {
             $table->increments('id');
-            $table->int('cliente_id');           
+            $table->integer('cliente_id');           
             $table->string('descripcion');
-            $table->int('user_id');
-            $table->int('status_id');
+            $table->integer('user_id');
+            $table->integer('status_id');
             $table->date('fecha_ofrecida');
             $table->date('fecha_terminada');
 //            $table->string('pago');

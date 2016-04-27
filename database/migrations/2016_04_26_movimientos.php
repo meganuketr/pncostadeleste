@@ -14,11 +14,11 @@ class CreateMovimientosTable extends Migration
     {
         Schema::create('movimientos', function (Blueprint $table) {
             $table->increments('id');
-            $table->int('material_id');
-            $table->int('tipo');
-            $table->int('cantidad');
-            $table->int('user_id');
-            $table->string('motivo');
+            $table->integer('material_id');
+            $table->enum('tipo', ['carga', 'descarga']);
+            $table->integer('cantidad');
+            $table->integer('user_id');
+           // $table->string('motivo');
             
             $table->foreign('material_id')
 	            ->references('id')

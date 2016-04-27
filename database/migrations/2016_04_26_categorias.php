@@ -14,9 +14,9 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('inventario', function (Blueprint $table) {
             $table->increments('id');
-            $table->int('material_id');
-            $table->int('existencia');
-            $table->int('minimo');
+            $table->integer('material_id');
+            $table->integer('existencia');
+            $table->integer('minimo');
             $table->foreign('material_id')
 	            ->references('id')
 	            ->on('materiales')
