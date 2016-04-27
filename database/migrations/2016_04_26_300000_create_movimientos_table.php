@@ -14,10 +14,10 @@ class CreateMovimientosTable extends Migration
     {
         Schema::create('movimientos', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('material_id');
+            $table->integer('material_id')->unsigned();
             $table->enum('tipo', ['carga', 'descarga']);
             $table->integer('cantidad');
-            $table->integer('user_id');
+            $table->integer('user_id')->unsigned();
            // $table->string('motivo');
             
             $table->foreign('material_id')
