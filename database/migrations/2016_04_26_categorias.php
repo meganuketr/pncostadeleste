@@ -12,16 +12,9 @@ class CreateCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('inventario', function (Blueprint $table) {
+        Schema::create('categorias', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('material_id');
-            $table->integer('existencia');
-            $table->integer('minimo');
-            $table->foreign('material_id')
-	            ->references('id')
-	            ->on('materiales')
-	            ->onDelete('cascade');
-            
+            $table->string('nombre');
             $table->timestamps();
         });
     }
@@ -33,6 +26,6 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('inventario');
+        Schema::drop('categorias');
     }
 }

@@ -28,6 +28,6 @@ class CreateInventoryTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        Schema::drop('inventario');
     }
 }
