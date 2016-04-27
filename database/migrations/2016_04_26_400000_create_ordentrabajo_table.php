@@ -17,7 +17,7 @@ class CreateOrdentrabajoTable extends Migration
             $table->integer('cliente_id')->unsigned();          
             $table->string('descripcion');
             $table->integer('user_id')->unsigned();
-            $table->integer('status_id');
+            $table->integer('status_id')->unsigned();
             $table->date('fecha_ofrecida');
             $table->date('fecha_terminada');
 //            $table->string('pago');
