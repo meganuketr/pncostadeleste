@@ -14,10 +14,14 @@ class CreateInventarioTable extends Migration
     {
         Schema::create('inventario', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('material_id');
+            $table->integer('material_id')->unsigned();
             $table->integer('existencia');
             $table->integer('minimo');
             $table->timestamps();
+            $table->foreign('material_id')
+	            ->references('id')
+	            ->on('materiales')
+	            ->onDelete('cascade');
         });
     }
 
