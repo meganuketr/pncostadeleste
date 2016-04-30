@@ -26,7 +26,7 @@
 					@foreach ($status as $stat)
 						<tr data-id="{{ $stat->id }}">
 							<td>{{ $stat->id }}</td>
-							<td>{{ $stat->name }}</td>
+							<td>{{ $stat->nombre }}</td>
 							<td>
 								<a href="{{ action('StatusController@edit',[$stat->id])}}">Edit</a>
 								<a href="" class="btn-delete">Delete</a>
