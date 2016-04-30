@@ -37,9 +37,9 @@
 				
 					@endforeach
 				</table>
-				{!! $status->render() !!}
 				
-				<form id ="form-delete" action="status/destroy/" method="get" >
+				
+				<form id ="form-delete" action="{{ route('status.destroy') }}" method="get" >
 				</form>				
 				
 				</div>
