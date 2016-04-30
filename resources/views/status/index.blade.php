@@ -37,7 +37,7 @@
 				
 					@endforeach
 				</table>
-				
+				{!! $status->render() !!}
 				
 				<form id ="form-delete" action="status/destroy" method="get" >
 				</form>				
@@ -72,5 +72,3 @@ $(document).ready(function() {
 });
 </script>
 @endsection
-
-@stop
