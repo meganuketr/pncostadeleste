@@ -11,7 +11,7 @@
 				<div class="panel-heading">Status</div>
 				<div class="panel-body">
 				<p>
-				<a class="btn btn-info" href="{{ route('subjects.create') }}" role="button">
+				<a class="btn btn-info" href="{{ route('status.create') }}" role="button">
 					New Status
 				</a>
 				</p>
