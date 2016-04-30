@@ -42,7 +42,7 @@ class StatusController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store(Requests\StatusRequest $request)
+	public function store(Requests $request)
 	{
 		Status::create($request->all());	
 		Session::flash('flash_message', 'Record Created');
@@ -79,7 +79,7 @@ class StatusController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id, Requests\StatusRequest $request)
+	public function update($id, Requests $request)
 	{
 		$status =  Status::findOrFail($id);
 		$status->update($request->all());
