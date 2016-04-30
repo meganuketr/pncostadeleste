@@ -24,7 +24,7 @@
 						
 					</tr>
 					@foreach ($status as $stat)
-						<tr data-id="{{ $subject->id }}">
+						<tr data-id="{{ $stat->id }}">
 							<td>{{ $stat->id }}</td>
 							<td>{{ $stat->name }}</td>
 							<td>
