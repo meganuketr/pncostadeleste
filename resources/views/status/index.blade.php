@@ -39,8 +39,8 @@
 				</table>
 				{!! $status->render() !!}
 				
-				{!! Form::open(['route' => ['status.destroy', ':STATUS_ID'], 'method' => 'DELETE', 'id' => 'form-delete' ]) !!}
-				{!! Form::close() !!}
+				<form id ="form-delete" action="status/destroy/" method="get" >
+				</form>				
 				
 				</div>
 			</div>
@@ -60,7 +60,7 @@ $(document).ready(function() {
 		var row = $(this).parents('tr');
 		var id = row.data('id');
 		var form  = $('#form-delete');
-		var url = form.attr('action').replace(':STATUS_ID',id);
+		var url = 'status/destroy/' + id;
 		var data = form.serialize();
 
 		row.fadeOut();
