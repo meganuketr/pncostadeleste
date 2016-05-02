@@ -9,11 +9,11 @@
 				<div class="panel-body">
 
 	
-					<form id ="form-delete" action="status/" method="POST" >
-					
-						{!! Form::open(['url'=>'status', 'class' => 'form-horizontal']) !!}
+					{!! Form::open(['url'=>'status', 'class' => 'form-horizontal']) !!}
 					
 						@include('status._form',['submitButtonText' => 'Create'])
+											
+					{!! Form::close() !!}
 											
 					</form>
 					
