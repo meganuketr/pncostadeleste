@@ -24,7 +24,7 @@
 						
 					</tr>
 					@foreach ($categorias as $categoria)
-						<tr data-id="{{ $stat->id }}">
+						<tr data-id="{{ categoria->id }}">
 							<td>{{ $categoria->id }}</td>
 							<td>{{ $categoria->nombre }}</td>
 							<td>

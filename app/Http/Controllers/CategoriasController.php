@@ -46,7 +46,7 @@ class CategoriasController extends Controller {
 	{
 		Categoria::create($request->all());	
 		Session::flash('flash_message', 'Record Created');
-		return redirect('categoria');
+		return redirect('categorias');
 	}
 
 	/**
@@ -86,7 +86,7 @@ class CategoriasController extends Controller {
 		
 		Session::flash('flash_message', 'Record Updated');
 		
-		return redirect('categoria');
+		return redirect('categorias');
 	}
 
 	/**
