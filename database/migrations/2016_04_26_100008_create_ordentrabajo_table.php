@@ -45,3 +45,10 @@ class CreateOrdentrabajoTable extends Migration
         Schema::drop('ordentrabajo');
     }
 }
+
+
+
+
+
+
+
