@@ -16,6 +16,7 @@ class CreateMaterialesTable extends Migration
             $table->increments('id');
             $table->integer('categoria_id')->unsigned();
             $table->string('nombre');
+            $table->integer('minimo');
             $table->float('precio');
             $table->timestamps();
  			$table->foreign('categoria_id')
