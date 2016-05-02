@@ -12,3 +12,8 @@
 			</div>
 		</div>
 			
+		<div class="form-group">
+			<div class="col-md-6 col-md-offset-4">
+				{!! Form::submit($submitButtonText, ['class' =>'btn btn-primary ' ]) !!}
+			</div>
+		</div>
