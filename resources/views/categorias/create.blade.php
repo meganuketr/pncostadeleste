@@ -9,7 +9,7 @@
 				<div class="panel-body">
 
 	
-					{!! Form::open(['url'=>'status', 'class' => 'form-horizontal']) !!}
+					{!! Form::open(['url'=>'categorias', 'class' => 'form-horizontal']) !!}
 					
 						@include('categorias._form',['submitButtonText' => 'Create'])
 											
