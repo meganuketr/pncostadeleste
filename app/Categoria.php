@@ -7,6 +7,10 @@ class Categoria extends Model {
 
 	protected $table = 'categorias';
 
-	protected $fillable = ['nombre'];
+	protected $fillable = ['nombre','descripcion'];
 	
+	public function materiales() {
+		return $this->hasMany('App\Material');
+	}
+
 }
