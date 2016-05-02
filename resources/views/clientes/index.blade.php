@@ -37,7 +37,7 @@
 				
 					@endforeach
 				</table>
-				{!! $cliente->render() !!}
+				{!! $clientes->render() !!}
 				
 				{!! Form::open(['route' => ['clientes.destroy', ':CLIENTE_ID'], 'method' => 'DELETE', 'id' => 'form-delete' ]) !!}
 				{!! Form::close() !!}
