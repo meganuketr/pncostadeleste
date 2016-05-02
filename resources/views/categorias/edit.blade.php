@@ -11,7 +11,7 @@
 	
 					
 					
-					{!! Form::model($status, ['method' => 'PATCH', 'action'=>['CategoriasController@update',$categoria->id], 'class' => 'form-horizontal'])	!!}	
+					{!! Form::model($categoria, ['method' => 'PATCH', 'action'=>['CategoriasController@update',$categoria->id], 'class' => 'form-horizontal'])	!!}	
 					
 						@include('categorias._form',['submitButtonText' => 'Edit'])
 					
