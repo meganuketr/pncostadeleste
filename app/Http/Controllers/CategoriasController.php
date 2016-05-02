@@ -23,8 +23,8 @@ class CategoriasController extends Controller {
 	 */
 	public function index()
 	{
-		$categoria = Categoria::paginate();
-		return view('categorias.index', compact('categoria'));
+		$categorias = Categoria::paginate();
+		return view('categorias.index', compact('categorias'));
 	}
 
 	/**
