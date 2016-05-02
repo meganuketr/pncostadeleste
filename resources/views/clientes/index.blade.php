@@ -39,7 +39,7 @@
 				</table>
 				{!! $cliente->render() !!}
 				
-				{!! Form::open(['route' => ['cliente.destroy', ':CLIENTE_ID'], 'method' => 'DELETE', 'id' => 'form-delete' ]) !!}
+				{!! Form::open(['route' => ['clientes.destroy', ':CLIENTE_ID'], 'method' => 'DELETE', 'id' => 'form-delete' ]) !!}
 				{!! Form::close() !!}
 				
 				</div>
