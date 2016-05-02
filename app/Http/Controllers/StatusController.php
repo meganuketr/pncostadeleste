@@ -3,7 +3,7 @@
 //use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Collective\Http\Request;
+use Illuminate\Http\Request;
 use App\Status;
 use Illuminate\Support\Facades\Session;
 use Collective\Http\Response;
