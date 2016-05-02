@@ -57,7 +57,7 @@ class CategoriasController extends Controller {
 	 */
 	public function show($id)
 	{
-		$categoria =  Status::findOrFail($id);
+		$categoria =  Categoria::findOrFail($id);
 		return view('categorias.show',compact('categoria'));
 	}
 
@@ -69,7 +69,7 @@ class CategoriasController extends Controller {
 	 */
 	public function edit($id)
 	{
-		$categoria = Status::findOrFail($id);
+		$categoria = Categoria::findOrFail($id);
 		return view('categorias.edit',compact('categoria'));
 	}
 
@@ -81,7 +81,7 @@ class CategoriasController extends Controller {
 	 */
 	public function update($id, Request $request)
 	{
-		$categoria = Status::findOrFail($id);
+		$categoria = Categoria::findOrFail($id);
 		$categoria->update($request->all());
 		
 		Session::flash('flash_message', 'Record Updated');
@@ -116,7 +116,7 @@ class CategoriasController extends Controller {
 	public function units($id, Request $request) {
 		if ($request->ajax())
         {
-        	$categoria = Status::findOrFail($id);
+        	$categoria = Categoria::findOrFail($id);
             $units = $categoria->units;
       //     return 'fyou';
     //        dd($units);
