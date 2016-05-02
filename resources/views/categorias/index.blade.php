@@ -37,7 +37,7 @@
 				
 					@endforeach
 				</table>
-				{!! $status->render() !!}
+				{!! $categorias->render() !!}
 				
 				{!! Form::open(['route' => ['categorias.destroy', ':CATEGORIA_ID'], 'method' => 'DELETE', 'id' => 'form-delete' ]) !!}
 				{!! Form::close() !!}
