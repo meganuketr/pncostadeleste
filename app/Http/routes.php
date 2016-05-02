@@ -36,6 +36,7 @@ Route::group(['middleware' => ['web']], function () {
 
 	Route::resource('status','StatusController');
 	Route::resource('categorias','CategoriasController');
+	Route::resource('clientes','ClientesController');
 	
 
 

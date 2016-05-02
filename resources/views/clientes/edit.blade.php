@@ -5,15 +5,15 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Edit: {{ $categoria->nombre }}</div>
+				<div class="panel-heading">Edit: {{ $cliente->nombre }}</div>
 				<div class="panel-body">
 	
 	
 					
 					
-					{!! Form::model($categoria, ['method' => 'PATCH', 'action'=>['CategoriasController@update',$categoria->id], 'class' => 'form-horizontal'])	!!}	
+					{!! Form::model($cliente, ['method' => 'PATCH', 'action'=>['ClientesController@update',$cliente->id], 'class' => 'form-horizontal'])	!!}	
 					
-						@include('categorias._form',['submitButtonText' => 'Edit'])
+						@include('clientes._form',['submitButtonText' => 'Edit'])
 					
 					{!! Form::close() !!}	
 				</div>

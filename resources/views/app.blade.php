@@ -40,6 +40,7 @@
 					<li><a href="/">Inicio</a></li>
 					<li><a href="/status">Status</a></li>
 					<li><a href="/categorias">Categorias</a></li>
+					<li><a href="/clientes">Clientes</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
