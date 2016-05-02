@@ -9,7 +9,7 @@
 				<div class="panel-body">
 	
 	
-					@include('errors.list')
+					
 					
 					{!! Form::model($status, ['method' => 'PATCH', 'action'=>['StatusController@update',$status->id], 'class' => 'form-horizontal'])	!!}	
 					
