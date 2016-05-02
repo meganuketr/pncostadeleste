@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Session;
 use Collective\Http\Response;
 
 
-class StatusController extends Controller {
+class CategoriasController extends Controller {
 
 	
 	public function __construct() {
