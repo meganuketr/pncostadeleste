@@ -41,6 +41,7 @@
 					<li><a href="/status">Status</a></li>
 					<li><a href="/categorias">Categorias</a></li>
 					<li><a href="/clientes">Clientes</a></li>
+					<li><a href="/materiales">Materiales</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
