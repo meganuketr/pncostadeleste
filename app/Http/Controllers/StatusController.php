@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Collective\Http\Request;
 use App\Status;
 use Illuminate\Support\Facades\Session;
-use Illuminate\Http\Response;
+use Collective\Http\Response;
 
 
 class StatusController extends Controller {
