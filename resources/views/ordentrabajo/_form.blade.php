@@ -15,7 +15,7 @@
 		<div class="form-group">
 			{!! Form::label('fecha_ofrecida','Fecha Ofrecida: ',['class'=>'col-md-4 control-label'])	!!}
 			<div class="col-md-6">
-				{{ Form::text('date', '', array('id' => 'datepicker') }}
+				{{!! Form::text('date', '', array('id' => 'datepicker') !!}}
 			</div>
 		</div>
 		
