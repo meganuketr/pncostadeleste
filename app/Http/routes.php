@@ -30,7 +30,7 @@ Route::group(['middleware' => ['web']], function () {
     //
 });
 
-	Route::get('/', 'HomeController@index');
+	Route::get('/', 'OrdenTrabajosController@index');
 	
 	Route::get('home', 'HomeController@index');
 

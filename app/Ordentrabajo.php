@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 class OrdenTrabajo extends Model {
 
 	protected $table = 'ordentrabajo';
+	
+	//protected $fillable = ['nombre', 'precio', 'minimo', 'categoria_id'];
 /*	public function subject() {
 		return $this->belongsTo('App\Subject');
 	}
@@ -18,4 +20,5 @@ class OrdenTrabajo extends Model {
 		return $this->belongsTo('App\Cliente');
 	}
 	
+
 }
