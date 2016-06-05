@@ -37,9 +37,9 @@
 				
 					@endforeach
 				</table>
-				{!! $status->render() !!}
+				{!! $ots->render() !!}
 				
-				{!! Form::open(['route' => ['status.destroy', ':STATUS_ID'], 'method' => 'DELETE', 'id' => 'form-delete' ]) !!}
+				{!! Form::open(['route' => ['ordentrabajo.destroy', ':STATUS_ID'], 'method' => 'DELETE', 'id' => 'form-delete' ]) !!}
 				{!! Form::close() !!}
 				
 				</div>
