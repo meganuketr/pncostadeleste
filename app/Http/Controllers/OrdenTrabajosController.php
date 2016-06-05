@@ -23,8 +23,8 @@ class OrdenTrabajosController extends Controller {
 	 */
 	public function index()
 	{
-		$ot = Ordentrabajo::orderBy('fecha_ofrecida', 'desc')->paginate();
-		return view('ordentrabajo.index', compact('ot'));
+		$ots = Ordentrabajo::orderBy('fecha_ofrecida', 'desc')->paginate();
+		return view('ordentrabajo.index', compact('ots'));
 	}
 
 	/**
