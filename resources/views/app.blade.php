@@ -7,6 +7,7 @@
 	<title>Postnet Costa del Este</title>
 
 	<link href="/css/app.css" rel="stylesheet">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<!--  <script src="//code.jquery.com/jquery.js"></script>  -->

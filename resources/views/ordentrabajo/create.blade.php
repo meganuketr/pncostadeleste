@@ -5,13 +5,13 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading"><h1>Create a Status</h1></div>
+				<div class="panel-heading"><h1>Create an OT</h1></div>
 				<div class="panel-body">
 
 	
-					{!! Form::open(['url'=>'status', 'class' => 'form-horizontal']) !!}
+					{!! Form::open(['url'=>'ordentrabajo', 'class' => 'form-horizontal']) !!}
 					
-						@include('status._form',['submitButtonText' => 'Create'])
+						@include('ordentrabajo._form',['submitButtonText' => 'Create'])
 											
 					{!! Form::close() !!}
 											
@@ -22,4 +22,12 @@
 		</div>
 	</div>
 </div>		
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
 @stop
