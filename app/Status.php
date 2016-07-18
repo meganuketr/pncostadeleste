@@ -9,4 +9,7 @@ class Status extends Model {
 	
 	protected $fillable = ['nombre', 'descripcion'];
 	
+	public function historico() {
+		return $this->hasMany('App\Historico');
+	}
 }

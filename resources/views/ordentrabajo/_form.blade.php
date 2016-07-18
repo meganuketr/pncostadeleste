@@ -1,7 +1,14 @@
 		<div class="form-group">		
-			{!! Form::label('id_cliente','Cliente: ',['class'=>'col-md-4 control-label']) !!}
+			{!! Form::label('cliente_id','Cliente: ',['class'=>'col-md-4 control-label']) !!}
 			<div class="col-md-6">
-				{!!	Form::text('id_cliente',null,['class'=>'form-control']) !!}
+				{!!	Form::text('cliente_id',null,['class'=>'form-control', 'id' =>  'cliente_id', 'placeholder' =>  'Enter id']) !!}
+			</div>
+		</div>
+		
+		<div class="form-group">		
+			{!! Form::label('nombre_cliente','Cliente: ',['class'=>'col-md-4 control-label']) !!}
+			<div class="col-md-6">
+				{!!	Form::text('nombre_cliente',null,['class'=>'form-control', 'id' =>  'cliente', 'placeholder' =>  'Enter name']) !!}
 			</div>
 		</div>
 		
@@ -15,7 +22,7 @@
 		<div class="form-group">
 			{!! Form::label('fecha_ofrecida','Fecha Ofrecida: ',['class'=>'col-md-4 control-label'])	!!}
 			<div class="col-md-6">
-				{{!! Form::text('date', '', array('id' => 'datepicker') !!}}
+				{!! Form::text('fecha_ofrecida', null, ['id'=>'datepicker']) !!}
 			</div>
 		</div>
 		

@@ -28,6 +28,17 @@
   <script>
   $(function() {
     $( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker( "option", "dateFormat", 'yy-mm-dd');
+
+
+	$('#cliente').autocomplete({
+    	source: "{{ url('search/autocomplete') }}",
+    	minLength: 2,
+	    select: function(event, ui) {
+	    	$('#cliente').val(ui.item.value);
+	    	$('#cliente_id').val(ui.item.id);
+	    }
+	});
   });
   </script>
 @stop

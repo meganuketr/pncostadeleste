@@ -7,7 +7,7 @@ class OrdenTrabajo extends Model {
 
 	protected $table = 'ordentrabajo';
 	
-	//protected $fillable = ['nombre', 'precio', 'minimo', 'categoria_id'];
+	protected $fillable = ['cliente_id', 'descripcion', 'fecha_ofrecida'];
 /*	public function subject() {
 		return $this->belongsTo('App\Subject');
 	}
@@ -20,5 +20,11 @@ class OrdenTrabajo extends Model {
 		return $this->belongsTo('App\Cliente');
 	}
 	
+	public function status() {
+		return $this->belongsTo('App\Status');
+	}	
 
+	public function historico() {
+		return $this->hasMany('App\Historico');
+	}
 }

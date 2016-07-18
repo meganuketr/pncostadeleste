@@ -19,17 +19,21 @@
 				<table class="table table-stripped">
 					<tr>
 						<td>#</td>
-						<td>OT</td>
+						<td>Cliente</td>
+						<td>Status</td>
+						<td>Fecha Ofre</td>
 						<td>Actions</td>
 						
 					</tr>
 					@foreach ($ots as $ot)
 						<tr data-id="{{ $ot->id }}">
 							<td>{{ $ot->id }}</td>
-							<td>{{ $ot->nombre }}</td>
+							<td>{{ $ot->nombrecliente }}</td>
+							<td>{{ $ot->status }}</td>
+							<td>{{ $ot->fecha_ofrecida }}</td>
 							<td>
-								<a href="{{ action('OrdenTrabajosController@edit',[$ot->id])}}">Edit</a>
-								<a href="" class="btn-delete">Delete</a>
+								<a href="{{ action('OrdenTrabajosController@changestatus',[$ot->id])}}">Change Status</a> | 
+								<a href="{{ action('OrdenTrabajosController@historicos',[$ot->id])}}">Historico</a>
 							</td>
 							
 						</tr>

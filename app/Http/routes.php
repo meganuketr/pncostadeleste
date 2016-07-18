@@ -33,7 +33,11 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/', 'OrdenTrabajosController@index');
 	
 	Route::get('home', 'HomeController@index');
-
+	Route::get('search/autocomplete', 'SearchController@autocomplete');
+	Route::get('ordentrabajo/{id}/changestatus', 'OrdenTrabajosController@changestatus');
+	Route::post('ordentrabajo/storeStatusChange', 'OrdenTrabajosController@storeStatusChange');
+	Route::get('ordentrabajo/{id}/historicos', 'OrdenTrabajosController@historicos');
+		
 	Route::resource('status','StatusController');
 	Route::resource('categorias','CategoriasController');
 	Route::resource('clientes','ClientesController');
